@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AirAware Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body style="font-family: Arial; background:#eef7f7; padding:40px;">
+  <div class="widget">
+  <h3>Ask AI about Air Quality</h3>
+
+  <div style="display:flex; gap:8px; margin-top:8px;">
+    <input
+      id="chatInput"
+      type="text"
+      placeholder="Ask something like: What is AQI?"
+      style="flex:1; padding:8px; border-radius:8px; border:1px solid #cbd5d5; font-size:13px;"
+    />
+
+    <select id="langSel"
+      style="padding:8px;border-radius:8px;border:1px solid #cbd5d5;">
+      <option value="en">English</option>
+      <option value="te">తెలుగు (Telugu)</option>
+      <option value="hi">हिंदी (Hindi)</option>
+      <option value="ta">தமிழ் (Tamil)</option>
+      <option value="kn">ಕನ್ನಡ (Kannada)</option>
+      <option value="ml">മലയാളം (Malayalam)</option>
+    </select>
+
+    <button
+      id="chatSend"
+      style="padding:8px 12px; border-radius:8px; border:0;
+             background:#0ea5a4; color:#fff; cursor:pointer; font-size:13px;">
+      Ask
+    </button>
+  </div>
+
+  <div id="chatReply"
+       style="margin-top:10px; font-size:13px; color:#06323a;
+              background:#f0fbfb; padding:8px;
+              border-radius:8px; min-height:32px;">
+    AI reply will appear here.
+  </div>
+</div>
+
+
+  <!-- Chatbot JS -->
+  <script src="/static/chatbot.js"></script>
+</body>
+</html>
